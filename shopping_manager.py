@@ -48,7 +48,7 @@ def remove_items():
 def add_value():
     file = open("shopping_manger_items_value.txt", "a")    
     value_elements.append(element_value)
-    file.write(str(element_value) + "\n")
+    file.write(str(element_value + "\n"))
     file.flush()
     file.close()
 
@@ -58,16 +58,24 @@ def remove_value():
     file.write(str(element_value))
     file.flush()
     file.close()
-
-
-
+    
+def sum_value_procedure():
+    file= open("shopping_manger_items_value.txt", "r")
+    value_elements =file.readlines()
+    value_elements = map(float,value_elements)
+    sum_values =(sum(value_elements))
+    print(sum_values)    
+    file.flush()
+    file.close()
+        
+    
 # to declare variables and dynamic array
 elements = []
 value_elements = []
 
 # main loop 
 while True:
-    options = ["1) add items", "2) remove items", "3) add value", "4) remove value", "5) element counting", "6) exit by program"]
+    options = ["1) add items", "2) remove items", "3) add value", "4) remove value", "5) element counting","6) sum of values","7) exit by program"]
 
     print("you are welcome shopping manager\n")
     print("what do you wanna do? insert your option\n")
@@ -102,7 +110,10 @@ while True:
 
     elif choice == 5:
         elements_counting()
+        
+    elif choice == 6 :
+        sum_value_procedure()
 
-    elif choice == 6:
+    elif choice == 7:
         print("exit by script")
         break
