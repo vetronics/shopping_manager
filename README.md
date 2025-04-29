@@ -9,7 +9,7 @@ A simple command-line tool written in Python for managing shopping list items an
 - File-based storage for items and their values
 - Options to add/remove items and values
 - Item/value counting
-- value sum
+- values sum inside the file values
 
 ## Requirements
 
