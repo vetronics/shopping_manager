@@ -75,7 +75,7 @@ value_elements = []
 
 # main loop 
 while True:
-    options = ["1) add items", "2) remove items", "3) add value", "4) remove value", "5) element counting","6) sum of values","7) exit by program"]
+    options = ["1) add items", "2) remove items", "3) add value", "4) remove values", "5) element counting","6) sum of values","7) exit by program"]
 
     print("you are welcome shopping manager\n")
     print("what do you wanna do? insert your option\n")
