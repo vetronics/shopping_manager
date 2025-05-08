@@ -180,6 +180,6 @@ Follow the setup guide based on your operating system:
 ## ⚠️ Compatibility Notes
 
 If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**), you should **comment out** the following lines in the script:
-- os.system("cls") only windows shell 
- - os.system("title shopping manager") only windows shell 
- - os.system("color 05") only windows shell 
+- os.system("cls")
+ - os.system("title shopping manager")
+ - os.system("color 05")
