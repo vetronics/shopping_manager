@@ -1,7 +1,4 @@
 
-Absolutely! Below is the **complete and polished `README.md`** content — properly formatted, GitHub-ready, and fully self-contained. You can copy and paste this directly into your project’s `README.md` file:
-
-````md
 # 🛒 Shopping Manager
 
 **Shopping Manager** is a simple, cross-platform command-line tool written in Python that helps you manage shopping list items and their associated values. It features an ASCII-style interface and provides file-based storage for tracking and budgeting.
