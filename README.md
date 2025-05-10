@@ -152,27 +152,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
 
 If you'd like to run the app using Docker, follow these steps:
 
-1. **Create a `Dockerfile`** in your project folder with the following content:
-
-   ```Dockerfile
-   FROM python:3.13-slim
-
-   WORKDIR /app
-
-   # Install system packages (e.g., git)
-   RUN apt-get update && apt-get install -y git && apt-get upgrade -y
-
-   # Install Python libraries directly
-   RUN pip install --no-cache-dir requests pyfiglet
-
-   # Clone the Git repository
-   RUN git clone https://github.com/vetronics/shopping_manager.git \
-       && mv shopping_manager/* . \
-       && rm -rf shopping_manager
-
-   # Run the app
-   CMD ["python", "shopping_manager.py"]
-   ```
+1. **download a `Dockerfile`** inside the dicrectoy as dockerfile
 
 2. **Build the Docker image:**
    In your terminal, navigate to the project folder (where the `Dockerfile` is located) and run:
