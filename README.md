@@ -43,55 +43,22 @@ Follow the setup guide based on your operating system. Additionally, you can als
 3. **Install `pyfiglet`:**
    - Run the following command in your terminal:
    
-     `pip install pyfiglet`
+     ```bash
+     pip install pyfiglet
+     ```
 
    > If `pip` is not recognized, try this alternative command:
    
-     `python -m pip install pyfiglet`
+     ```bash
+     python -m pip install pyfiglet
+     ```
 
 4. **Run the script:**
    - On **Windows**, you can **double-click** the `shopping_manager.py` file to run the script. The terminal window will appear, and you can interact with the application.
    - If double-clicking doesn't work (i.e., the terminal closes immediately), open **Command Prompt** or **PowerShell**, navigate to the script's folder, and run:
 
-     `python shopping_manager.py`
-
-5. **Using Docker (Alternative):**
-   If you'd like to run the app using Docker, follow these steps:
-
-   - **Dockerfile:** Ensure the `Dockerfile` is in your project folder with the following content:
-
-     ```Dockerfile
-     FROM python:3.13-slim
-
-     WORKDIR /app
-
-     # Install system packages (e.g., git)
-     RUN apt-get update && apt-get install -y git && apt-get upgrade -y
-
-     # Install Python libraries directly
-     RUN pip install --no-cache-dir requests pyfiglet
-
-     # Clone the Git repository
-     RUN git clone https://github.com/vetronics/shopping_manager.git \
-         && mv shopping_manager/* . \
-         && rm -rf shopping_manager
-
-     # Run the app
-     CMD ["python", "shopping_manager.py"]
-     ```
-
-   - **Build the Docker image:**
-     In your terminal, navigate to the project folder (where the `Dockerfile` is located) and run:
-
      ```bash
-     docker build -t shopping-manager .
-     ```
-
-   - **Run the Docker container:**
-     Once the image is built, you can run it with:
-
-     ```bash
-     docker run -it shopping-manager
+     python shopping_manager.py
      ```
 
 ---
@@ -101,7 +68,9 @@ Follow the setup guide based on your operating system. Additionally, you can als
 1. **Install Python 3:**
    - With [Homebrew](https://brew.sh/):
 
-     `brew install python`
+     ```bash
+     brew install python
+     ```
    
    - Or download it from [python.org](https://www.python.org/downloads/)
 
@@ -111,52 +80,21 @@ Follow the setup guide based on your operating system. Additionally, you can als
 3. **Install `pyfiglet`:**
    - Run the following command in your terminal:
    
-     `pip3 install pyfiglet`
+     ```bash
+     pip3 install pyfiglet
+     ```
 
    > Or try:
    
-     `python3 -m pip install pyfiglet`
+     ```bash
+     python3 -m pip install pyfiglet
+     ```
 
 4. **Run the Script:**
    - Open **Terminal**, navigate to the script's directory, and run:
 
-     `python3 shopping_manager.py`
-
-5. **Using Docker (Alternative):**
-   - **Dockerfile:** Ensure the `Dockerfile` is in your project folder with the following content:
-
-     ```Dockerfile
-     FROM python:3.13-slim
-
-     WORKDIR /app
-
-     # Install system packages (e.g., git)
-     RUN apt-get update && apt-get install -y git && apt-get upgrade -y
-
-     # Install Python libraries directly
-     RUN pip install --no-cache-dir requests pyfiglet
-
-     # Clone the Git repository
-     RUN git clone https://github.com/vetronics/shopping_manager.git \
-         && mv shopping_manager/* . \
-         && rm -rf shopping_manager
-
-     # Run the app
-     CMD ["python", "shopping_manager.py"]
-     ```
-
-   - **Build the Docker image:**
-     In your terminal, navigate to the project folder (where the `Dockerfile` is located) and run:
-
      ```bash
-     docker build -t shopping-manager .
-     ```
-
-   - **Run the Docker container:**
-     Once the image is built, you can run it with:
-
-     ```bash
-     docker run -it shopping-manager
+     python3 shopping_manager.py
      ```
 
 ---
@@ -168,3 +106,164 @@ Follow the setup guide based on your operating system. Additionally, you can als
    ```bash
    sudo apt update
    sudo apt install python3 python3-pip
+   ```
+
+2. **Install `pyfiglet`:**
+
+   ```bash
+   pip3 install pyfiglet
+   ```
+
+3. **Run the Script:**
+
+   * Open **Terminal**, navigate to the script's directory, and run:
+
+     ```bash
+     python3 shopping_manager.py
+     ```
+
+---
+
+### 🐧 Linux (Fedora)
+
+1. **Install Python and pip:**
+
+   ```bash
+   sudo dnf install python3 python3-pip
+   ```
+
+2. **Install `pyfiglet`:**
+
+   ```bash
+   pip3 install pyfiglet
+   ```
+
+3. **Run the Script:**
+
+   * Open **Terminal**, navigate to the script's directory, and run:
+
+     ```bash
+     python3 shopping_manager.py
+     ```
+
+---
+
+### 🐳 Docker (Alternative)
+
+If you'd like to run the app using Docker, follow these steps:
+
+1. **Create a `Dockerfile`** in your project folder with the following content:
+
+   ```Dockerfile
+   FROM python:3.13-slim
+
+   WORKDIR /app
+
+   # Install system packages (e.g., git)
+   RUN apt-get update && apt-get install -y git && apt-get upgrade -y
+
+   # Install Python libraries directly
+   RUN pip install --no-cache-dir requests pyfiglet
+
+   # Clone the Git repository
+   RUN git clone https://github.com/vetronics/shopping_manager.git \
+       && mv shopping_manager/* . \
+       && rm -rf shopping_manager
+
+   # Run the app
+   CMD ["python", "shopping_manager.py"]
+   ```
+
+2. **Build the Docker image:**
+   In your terminal, navigate to the project folder (where the `Dockerfile` is located) and run:
+
+   ```bash
+   docker build -t shopping-manager .
+   ```
+
+3. **Run the Docker container:**
+   Once the image is built, you can run it with:
+
+   ```bash
+   docker run -it shopping-manager
+   ```
+
+This method does not require installing Python or dependencies on your local system, as everything will be handled by Docker.
+
+---
+
+## ✅ Setup Checklist
+
+* [x] Install Python 3
+* [x] Add Python to PATH (Windows)
+* [x] Open Terminal or Command Prompt
+* [x] Install `pyfiglet` with pip
+
+---
+
+## 🚀 How to Run
+
+1. **Windows:**
+
+   * **Double-click** the `shopping_manager.py` file to run the script on Windows.
+   * If double-clicking doesn't work (i.e., the terminal closes immediately), open **Command Prompt** or **PowerShell**, navigate to the script's directory, and run:
+
+     ```bash
+     python shopping_manager.py
+     ```
+
+2. **macOS and Linux (Debian/Ubuntu/Fedora):**
+
+   * Open **Terminal**, navigate to the script's directory, and run:
+
+     ```bash
+     python3 shopping_manager.py
+     ```
+
+   > Use `python` if `python3` doesn't work on your system.
+
+---
+
+## 📂 File Management
+
+* The app saves shopping list items and their values in local `.txt` files.
+* Ensure you have read/write permissions in the script directory.
+
+---
+
+## 🧾 Example Use Case
+
+* Add items like `Milk`, `Eggs`, or `Bread`.
+* Assign values like cost or quantity.
+* Track total item count and sum of values.
+* Remove or update items as needed.
+
+---
+
+## 🧰 Troubleshooting
+
+* **Command not found**: Use `python3` or `pip3`.
+* **Permission denied**: Run as administrator or use `sudo` on GNU/Linux machines.
+* **pip not working**: Ensure Python is properly installed and in PATH.
+
+---
+
+## 📌 Notes
+
+* Works on Windows, macOS, and Linux.
+* Great for small shopping or budget tracking tasks.
+* Easy to expand or customize.
+
+---
+
+## ⚠️ Compatibility Notes
+
+If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**), you should **comment out** the following lines in the script:
+
+```python
+# os.system("cls")  # Windows-specific clear screen
+# os.system("title shopping manager")  # Set terminal window title (Windows)
+# os.system("color 05")  # Change text color (Windows)
+```
+
+---
