@@ -238,7 +238,7 @@ This method does not require installing Python or dependencies on your local sys
 
 ## ⚠️ Compatibility Notes
 
-If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**), you should **comment out** the following lines in the script:
+If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**,**docker**), you should **comment out** the following lines in the script:
 
 ```python
 # os.system("cls")  # Windows-specific clear screen
