@@ -2,6 +2,7 @@
 import pyfiglet
 import os
 import matplotlib.pyplot as plt
+import pandas as pd 
 
 # setup windows shell
 os.system("cls")
@@ -23,7 +24,7 @@ def elements_counting():
         elements = len(lines)
     print("there are total in first file:", elements)
 
-    with open("shopping_manger_items_value.txt", "r") as file:
+    with open("shopping_manger_items_value.csv", "r") as file:
         lines = file.readlines()
         value_elements = len(lines)
     print("there are total in the second file:", value_elements)
@@ -39,42 +40,44 @@ def remove_items():
         file.write(element_removed)
 
 def add_value():
-    with open("shopping_manger_items_value.txt", "a") as file:
+    with open("shopping_manger_items_value.csv", "a") as file:
         value_elements.append(element_value)
         file.write(str(element_value) + "\n")
 
 def remove_value():
-    with open("shopping_manger_items_value.txt", "w") as file:
+    with open("shopping_manger_items_value.csv", "w") as file:
         value_elements.remove(element_value)
         file.write(str(element_value))
 
 def sum_value_procedure():
-    with open("shopping_manger_items_value.txt", "r") as file:
-        value_elements = file.readlines()
-    value_elements = map(float, value_elements)
-    sum_values = sum(value_elements)
-    print(sum_values) 
+
+   df_value = pd.read_csv("shopping_manger_items_value.csv",header=None)
+   
+   print(df_value.sum(numeric_only=True))
+   
+
 
 def manage_plot():
-    with open("shopping_manger_items_list.txt", "r") as file:
-        plot_elements = file.readlines()
+    try:
+        df_value = pd.read_csv("shopping_manger_items_value.csv",names=["price"],header=None)
 
-    lenghet_elements = len(plot_elements)
+        df_value = df_value.dropna()
 
-    with open("shopping_manger_items_value.txt", "r") as file2:
-        plot_elements_value = file.readlines()
-    lenghet_value_elements = len(plot_elements_value)
+        print(df_value.values)
 
-    if lenghet_elements == lenghet_value_elements:
-        fig, ax = plt.subplots()
-        ax.set_title('shopping manager')
-        plt.xlabel("elements")
-        plt.ylabel("price")
-        plt.grid(True)
-        plt.plot(plot_elements, plot_elements_value)
+        df_value['price'].plot(kind='pie',title='shopping manager')
+
         plt.show()
-    else:
-        print("you should verify that the list must be equal\n")
+         
+    except FileNotFoundError :
+        print("error file load \n")
+   
+    except KeyError:
+        print("price column not found please insert inside csv file")
+
+    except TypeError :
+
+        print("there are not data in file ")
 
 # to declare variables and dynamic array
 elements = []
@@ -130,4 +133,5 @@ while True:
             break
 
     except ValueError :
-        print("you should verify input")
+        print("you should verify input \n\n")
+        
