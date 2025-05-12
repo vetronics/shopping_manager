@@ -7,6 +7,7 @@
 ## ✨ Features
 
 - ASCII Art interface using `pyfiglet`
+- data visualization by 'pandas, matplotlib'
 - Interactive command-line menu
 - Add or remove shopping items
 - Assign values to items (e.g., cost, quantity)
@@ -22,6 +23,8 @@
 - Python 3.x  
   👉 [Download Python](https://www.python.org/downloads/)
 - `pyfiglet` module
+- `pandas` module
+- `matplotlib` module
 
 ---
 
@@ -40,17 +43,21 @@ Follow the setup guide based on your operating system. Additionally, you can als
 2. **Open the terminal:**
    - Press `Windows + S`, search for **Command Prompt**, **PowerShell**, or **Windows Terminal**
 
-3. **Install `pyfiglet`:**
+3. **Install `pyfiglet,pandas,matplotlib`:**
    - Run the following command in your terminal:
    
      ```bash
      pip install pyfiglet
+     pip install pandas
+     pip install matplotlib
      ```
 
    > If `pip` is not recognized, try this alternative command:
    
      ```bash
      python -m pip install pyfiglet
+     python -m pip install pandas
+     python -m pip install matplotlib
      ```
 
 4. **Run the script:**
@@ -77,11 +84,13 @@ Follow the setup guide based on your operating system. Additionally, you can als
 2. **Open Terminal:**
    - Press `Command + Space`, type **Terminal**, then press Enter
 
-3. **Install `pyfiglet`:**
+3. **Install `pyfiglet,pandas,matplotlib`:**
    - Run the following command in your terminal:
    
      ```bash
-     pip3 install pyfiglet
+      pip3 install pyfiglet
+     pip3 install pandas
+     pip3 install matplotlib
      ```
 
    > Or try:
@@ -108,10 +117,12 @@ Follow the setup guide based on your operating system. Additionally, you can als
    sudo apt install python3 python3-pip
    ```
 
-2. **Install `pyfiglet`:**
+2. **Install `pyfiglet,pandas,matplotlib`:**
 
    ```bash
    pip3 install pyfiglet
+   pip3 install pandas
+   pip3 install matplotlib
    ```
 
 3. **Run the Script:**
@@ -132,10 +143,12 @@ Follow the setup guide based on your operating system. Additionally, you can als
    sudo dnf install python3 python3-pip
    ```
 
-2. **Install `pyfiglet`:**
+2. **Install `pyfiglet,pandas,matplotlib`:**
 
    ```bash
    pip3 install pyfiglet
+   pip3 install pandas
+   pip3 install matplotlib
    ```
 
 3. **Run the Script:**
@@ -177,7 +190,7 @@ This method does not require installing Python or dependencies on your local sys
 * [x] Install Python 3
 * [x] Add Python to PATH (Windows)
 * [x] Open Terminal or Command Prompt
-* [x] Install `pyfiglet` with pip
+* [x] Install `pyfiglet,pandas,matplotlib` with pip
 
 ---
 
