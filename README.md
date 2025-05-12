@@ -97,6 +97,8 @@ Follow the setup guide based on your operating system. Additionally, you can als
    
      ```bash
      python3 -m pip install pyfiglet
+     python3 -m pip install pandas
+     python3 -m pip install matplotlib
      ```
 
 4. **Run the Script:**
