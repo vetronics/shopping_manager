@@ -13,7 +13,7 @@
 - Assign values to items (e.g., cost, quantity)
 - Count total items and values
 - Calculate the total sum of all values
-- Saves data in plain `.txt` file and csv
+- Saves data in plain `.csv` file
 - No external database required
 
 ---
