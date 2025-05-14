@@ -221,7 +221,7 @@ This method does not require installing Python or dependencies on your local sys
 
 ## 📂 File Management
 
-* The app saves shopping list items and their values in local `.txt` files.
+* The app saves shopping list items and their values in local `.csv` files.
 * Ensure you have read/write permissions in the script directory.
 
 ---
