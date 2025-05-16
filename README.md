@@ -250,6 +250,20 @@ This method does not require installing Python or dependencies on your local sys
 * Easy to expand or customize.
 
 ---
+## Development Environment: Visual Studio Community Edition
+
+The scripts were written and tested using **Visual Studio Community Edition**, a free and feature-rich integrated development environment (IDE) from Microsoft. While Visual Studio is widely used for C# and .NET development, it also provides excellent support for Python development through the **Python Development workload**, which includes tools like:
+
+- Python interpreter and virtual environment support  
+- Integrated terminal for running Python scripts  
+- Intelligent code completion (IntelliSense)  
+- Debugging tools  
+- Code navigation (go to definition, find references)
+
+Visual Studio Community Edition allows Python developers to take advantage of a full-fledged IDE with powerful features like **Git integration**, **unit testing support**, and **built-in code analysis** tools. It provides a solid foundation for developing Python applications related to shopping and inventory management while maintaining a professional, user-friendly environment.
+
+By using Visual Studio Community Edition, developers can streamline the process of coding, debugging, and testing Python scripts in a single platform, making it an ideal choice for both beginners and experienced developers.
+
 
 ## ⚠️ Compatibility Notes
 
