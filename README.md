@@ -163,25 +163,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
 
 ---
 
-### 🐳 Docker (Alternative)
 
-If you'd like to run the app using Docker, follow these steps:
-
-1. **download a `Dockerfile`** inside the dicrectoy as dockerfile
-
-2. **Build the Docker image:**
-   In your terminal, navigate to the project folder (where the `Dockerfile` is located) and run:
-
-   ```bash
-   docker build -t shopping-manager .
-   ```
-
-3. **Run the Docker container:**
-   Once the image is built, you can run it with:
-
-   ```bash
-   docker run -it shopping-manager
-   ```
 
 This method does not require installing Python or dependencies on your local system, as everything will be handled by Docker.
 
@@ -267,7 +249,7 @@ By using Visual Studio Community Edition, developers can streamline the process 
 
 ## ⚠️ Compatibility Notes
 
-If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**,**docker**), you should **comment out** the following lines in the script:
+If you're running the script on **macOS** or **Linux** (including **Fedora**, **Debian**, **Ubuntu**), you should **comment out** the following lines in the script:
 
 ```python
 # os.system("cls")  # Windows-specific clear screen
