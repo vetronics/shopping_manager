@@ -25,6 +25,7 @@
 - `pyfiglet` module
 - `pandas` module
 - `matplotlib` module
+-  `pyautogui` module
 
 ---
 
@@ -43,13 +44,14 @@ Follow the setup guide based on your operating system. Additionally, you can als
 2. **Open the terminal:**
    - Press `Windows + S`, search for **Command Prompt**, **PowerShell**, or **Windows Terminal**
 
-3. **Install `pyfiglet,pandas,matplotlib`:**
+3. **Install `pyfiglet,pandas,matplotlib,pyautogui`:**
    - Run the following command in your terminal:
    
      ```bash
      pip install pyfiglet
      pip install pandas
      pip install matplotlib
+     pip install pyautogui
      ```
 
    > If `pip` is not recognized, try this alternative command:
@@ -58,6 +60,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
      python -m pip install pyfiglet
      python -m pip install pandas
      python -m pip install matplotlib
+     python -m pip install pyautogui
      ```
 
 4. **Run the script:**
@@ -91,6 +94,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
       pip3 install pyfiglet
      pip3 install pandas
      pip3 install matplotlib
+     pip3 install pyautogui
      ```
 
    > Or try:
@@ -99,6 +103,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
      python3 -m pip install pyfiglet
      python3 -m pip install pandas
      python3 -m pip install matplotlib
+     python3 -m pip install pyautogui
      ```
 
 4. **Run the Script:**
@@ -125,6 +130,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
    pip3 install pyfiglet
    pip3 install pandas
    pip3 install matplotlib
+   pip3 install pyautogui
    ```
 
 3. **Run the Script:**
@@ -145,12 +151,13 @@ Follow the setup guide based on your operating system. Additionally, you can als
    sudo dnf install python3 python3-pip
    ```
 
-2. **Install `pyfiglet,pandas,matplotlib`:**
+2. **Install `pyfiglet,pandas,matplotlib,pyautogui`:**
 
    ```bash
    pip3 install pyfiglet
    pip3 install pandas
    pip3 install matplotlib
+   pip3 install pyautogui
    ```
 
 3. **Run the Script:**
