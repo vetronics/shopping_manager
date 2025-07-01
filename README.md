@@ -87,7 +87,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
 2. **Open Terminal:**
    - Press `Command + Space`, type **Terminal**, then press Enter
 
-3. **Install `pyfiglet,pandas,matplotlib`:**
+3. **Install `pyfiglet,pandas,matplotlib,pyautogui`:**
    - Run the following command in your terminal:
    
      ```bash
@@ -124,7 +124,7 @@ Follow the setup guide based on your operating system. Additionally, you can als
    sudo apt install python3 python3-pip
    ```
 
-2. **Install `pyfiglet,pandas,matplotlib`:**
+2. **Install `pyfiglet,pandas,matplotlib,pyautogui`:**
 
    ```bash
    pip3 install pyfiglet
