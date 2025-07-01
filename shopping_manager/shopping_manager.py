@@ -3,6 +3,7 @@ import pyfiglet
 import os
 import matplotlib.pyplot as plt
 import pandas as pd 
+import pyautogui
 
 # setup windows shell
 os.system("cls")
@@ -156,7 +157,9 @@ while True:
             manage_plot()
 
         elif choice == 8:
-            print("exit by script")
+            
+            pyautogui.alert(text='you are exiting from shopping manager', title='alert', button='OK')
+
             break
 
     except ValueError:
